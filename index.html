@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Virtual Theremin</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <h2>Virtual <a href="https://www.youtube.com/watch?v=K6KbEnGnymk" target="_blank">Theremin</a></h2>
+
+    <div style="position: relative; width: auto; height: auto;">
+      <video id="video" autoplay playsinline style="position: absolute; top: 20px; left: 0;"></video>
+      <canvas id="overlay" style="position: absolute; top: 20px; left: 0;"></canvas>
+    </div>
+
+    <button id="start">Start Audio</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+    <script src="app.js"></script>
+
+  </body>
+</html>

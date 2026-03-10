@@ -1,0 +1,12 @@
+body {
+  background: #111;
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+video {
+  width: 800px;
+  margin-top: 10px;
+  transform: scaleX(-1);
+}
