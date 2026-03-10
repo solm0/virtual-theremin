@@ -7,14 +7,15 @@
   </head>
 
   <body>
-    <h2>Virtual <a href="https://www.youtube.com/watch?v=K6KbEnGnymk" target="_blank">Theremin</a></h2>
+    <h2>Virtual <a href="https://www.youtube.com/watch?v=K6KbEnGnymk" target="_blank" style="color: aqua;">Theremin</a></h2>
+    <p><span style="color: darkorange;">왼손</span>과 <span style="color:hotpink;">카메라</span> 간의 거리로 <span style="color: yellow;">볼륨</span>을, <span style="color: darkorange;">오른손의 엄지</span>와 <span style="color: hotpink;">다른 네 손가락</span> 간의 거리로 <span style="color: yellow;">음계</span>를 조절하며 가상 테레민 연주를 즐겨 보세요.</p>
 
-    <div style="position: relative; width: auto; height: auto;">
-      <video id="video" autoplay playsinline style="position: absolute; top: 20px; left: 0;"></video>
-      <canvas id="overlay" style="position: absolute; top: 20px; left: 0;"></canvas>
+    <div style="position: relative; width: 100vw; height: auto;">
+      <video id="video" autoplay playsinline style="position: absolute; width: 80%; top: 20px; left: 50%; transform: translateX(-50%) scaleX(-1); filter: blur(20px);"></video>
+      <canvas id="overlay" style="position: absolute; width: 80%; top: 20px; left: 50%; transform: translateX(-50%);"></canvas>
     </div>
 
-    <button id="start">Start Audio</button>
+    <button id="start" style="transform: scale(120%);">Start Audio</button>
 
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js"></script>
